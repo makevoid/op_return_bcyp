@@ -11,5 +11,5 @@
 # rspec failure tracking
 .rspec_status
 
-op_return_bcyp
+/op_return_bcyp
 dump.rdb
