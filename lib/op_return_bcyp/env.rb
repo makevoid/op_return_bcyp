@@ -17,12 +17,13 @@ Bundler.require :default
 
 # raise [arg0, lib_path].inspect
 
+require_relative 'vendor/caching'
+# usage: extend Caching; #...; cache(:key) {; # method; }
+
 module OpReturnBcyp
   HE = HTMLEntities.new
 
-  # usage: extend Caching; #...; cache(:key) {; # method; } 
-  require_relative 'vendor/caching'
-
   require_relative 'utils'
-  include Utils
 end
+
+require_relative 'tx_fetcher'
