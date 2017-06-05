@@ -1,6 +1,6 @@
 # OpReturnBcyp
 
-### op_return_bcyp
+### op_return_bcyp (OP Return BlockCypher)
 
 #### Gets the OP_RETURN data of all the latest transactions submitted by a particular bitcoin address 
 
