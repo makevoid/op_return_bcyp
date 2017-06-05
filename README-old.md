@@ -1,9 +1,5 @@
 # OpReturnBcyp
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/op_return_bcyp`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +18,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+
+```rb
+TX = OpReturnBcyp::TX
+
+# choose the bitcoin address you want to get the op-return "data protocol" data contents
+address = "1Gj3S8GPgRQrP4gUCKVMFmMSdM6bMkB4wz"
+transactions = TX.all address
+p transactions
+
+# subsequent requests are cached (you can configure redis or call set with a ttl to expire keys if you want to refresh the cache)
+transactions = TX.all address
+p transactions
+```
 
 ## Development
 
@@ -32,7 +40,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/op_return_bcyp.
+Bug reports (via Github Issues) and pull requests (obviously :D) are welcome: https://github.com/makevoid/op_return_bcyp.
 
 
 ## License
