@@ -2,7 +2,7 @@
 
 ### op_return_bcyp
 
-#### Gets the OP_RETURN data of all the latest bitcoin transactions submitted by a particular bitcoin address 
+#### Gets the OP_RETURN data of all the latest transactions submitted by a particular bitcoin address 
 
 NOTE: This gem uses blockcypher 3rd party API ruby (gem) implementation
 
